@@ -43,6 +43,9 @@ def dover(segment,p):
 
     print("Доверительный интервал для сегмента %s : от %.2f до %.2f" %(segment,transaction_90_min,transaction_90_max))
 
+dover("R",0.9)
+dover("AF",0.9)    
+    
 def student():
     data_R = data[data['sector']== 'R']
     data_AF = data[data['sector'] == 'AF']
